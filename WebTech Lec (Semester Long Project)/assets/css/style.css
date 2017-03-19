@@ -9,22 +9,22 @@ html
   padding: 0;}
 
  body
-{ font: normal .80em 'trebuchet ms', arial, sans-serif;
-  background: #1b1f22;  url("../../images/bg.jpg") repeat;
-  color: #FFF; top: 0; left: 0;}
+{ font: normal 1.0em 'trebuchet ms', arial, sans-serif;
+  background:   url("../../images/bg.jpg") repeat;
+  color: black; top: 0; left: 0;}
 
 
   	p {
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
-		font-weight: 600;
+		color: black;
+		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
-		letter-spacing: 0.2rem;
+		letter-spacing: 0.1rem;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -33,19 +33,20 @@ html
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+			border-bottom: solid 3px black;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
 			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
+			margin: 0 0 1rem 0;
 		}
 
 img
 { border: 0;
-    height: 400px;
-    width: 450px;}
+    height: 300px;
+    width: 400px;
+    }
 	
 a, a:hover
 { outline: none;
@@ -110,10 +111,10 @@ a:hover
 		
 #header
 { background: transparent;
-  height: 170px;}
+  height: 150px;}
 
 #logo
-{ width: 825px;
+{ width: 840px;
   position: relative;
   height: 168px;}
 
@@ -137,19 +138,18 @@ a:hover
 }
 
 #logo_text h1 a .logo_colour
-{ color: black;}
+{ color: dimgrey;}
 
 #logo_text h2
 { font-size: 100%;
   padding: 4px 0 0 0;
-  color: #FFF;}
+  color: darkgrey;}
 
 #site_content
-{ width: 900px;
+{ width: 780px;
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 20px 24px 20px 20px;
-  background: transparent url("../../images/transparent_light.png) repeat;} 
-  
-  
-
+  background-color: white;
+    opacity: .73;
+} 
