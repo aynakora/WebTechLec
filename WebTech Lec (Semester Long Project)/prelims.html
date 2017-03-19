@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
   <title>WebtekPrelims</title>
@@ -28,7 +28,7 @@
                 The Internet is a network of networks that consists of millions of private, public, academic, business and government networks, of local to scope, that are linked by a broadway of electronic, wireless and optical networking technoogies.</p>
 								
         <h3 class="major">The World Wide Web (WWW)</h3>
-				<span class="image main"><img src="./images/pic01.jpg" alt="" /></span>
+				<span class="image main"><img src="./images/pic01.jpg" alt="" class="img1"></span>
 				<p>A global information medium which users can read and write via computers connected to the Internet. The term is often mistakenly used as a synonym for the Internet itself, but the Web is a service that operates over the Internet, as e-mail does.</p>
 									
                 <p>In September 1994, Tim Berners-Lee founded the World Wide Web Consortium(W3C) at the Massachusetts Institute of Technology with support from the Defense Advanced Research Projects Agency (DARPA) and the European Commission. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web.
@@ -56,10 +56,10 @@
 				<br>
 				
         <h4 class="major"> HTTP Version History: </h4>
-				<li> HTTP 0.9 (1991) </li>
-				<li> HTTP 1.0 (RFC 1945, May 1996) </li>
-				<li> HTTP 1.1 (RFC 2068, Jan 1997) </li>
-				<li> HTTP 2 (RFC 7540, May 2015) </li>
+				<p class="list"> HTTP 0.9 (1991) </p>
+				<p class="list"> HTTP 1.0 (RFC 1945, May 1996) </p>
+				<p class="list"> HTTP 1.1 (RFC 2068, Jan 1997) </p>
+				<p class="list"> HTTP 2 (RFC 7540, May 2015) </p>
 								<br>
 								<br>
         <h4 class="major"> HTTP Fundamentals: </h4>
@@ -68,74 +68,78 @@
 								<br>
         
         <h4 class="major"> HTTP is based on a client-server architecture:</h4>
-				<li> Clients a.k.a. user agents (any application accessing HTTP): Web Browser, Web Crawler, Spiders, others </li>
-				<li> Servers : origin, proxy, gateways, tunnels </li>
+				<p class="list"> Clients a.k.a. user agents (any application accessing HTTP): Web Browser, Web Crawler, Spiders, others </p>
+				<p class="list"> Servers : origin, proxy, gateways, tunnels </p>
 								<br>
 								<br>
         
         <h4 class="major"> HTTP uses a request-response standard protocol </h4>
-				<li> Client sends an HTTP request message. </li>
-				<li> Server processes the request and replies with an HTTP response message. </li>
-        <h4 class="major"> HTTP is a stateless communications protocol </h4>
-				<li> Servers do not keep information about the client in-between request. </li>
+				<p class="list"> Client sends an HTTP request message. </p>
+				<p class="list"> Server processes the request and replies with an HTTP response message. </p>
+								<br>
+								<br>
+	   <h4 class="major"> HTTP is a stateless communications protocol </h4>
+				<p class="list"> Servers do not keep information about the client in-between request. </p>
 								<br>
 								<br>
         <h4 class="major"> HTTP is a stateless communications protocol </h4>
-									<li> Server will not keep any information about clients in between requests </li>
+									<p class="list"> Server will not keep any information about clients in between requests </p>
 								<br>
 								<br>
         <h4 class="major"> HTTP provides support for other functionalities such as:</h4>
-				<li> Cache Control </li>
-				<li> Content Media Type MIME (Multipurpose Internet Mail Extension) </li>
-				<li>Language and character set specification </li>
-				<li> Content or Transfer Coding </li>
-				<li> Content Negotiation </li>
-				<li> Client Server Protocol Negotiation </li>
-				<li> Persistent Connections </li>
-				<li> Request Pipelining </li>
-				<li> Authentication or Authorization </li>
+				<p class="list"> Cache Control </p>
+				<p class="list"> Content Media Type MIME (Multipurpose Internet Mail Extension) </p>
+				<p class="list">Language and character set specification </p>
+				<p class="list"> Content or Transfer Coding </p>
+				<p class="list"> Content Negotiation </p>
+				<p class="list"> Client Server Protocol Negotiation </p>
+				<p class="list"> Persistent Connections </p>
+				<p class="list"> Request Pipelining </p>
+				<p class="list"> Authentication or Authorization </p>
 								<br>
 								<br>
 								<br>
         
         <h3 class="major">The HTTP Request Methods</h3>
         <h4> GET</h4>
-				<li> Most commonly used HTTP method </li>
-				<li> Used to request from the server the retrieval of the source identified by the request URI; the retrieved resource is returned in the message body as an entity. </li>
-				<li> Can be combined with conditional and/or range request headers to effect conditional and/or partial resource retrieval. </li>
-				<li> Must be supported by all general-purpose servers </li>
+			
+				<p class="list"> Most commonly used HTTP method </p>
+				<p class="list"> Used to request from the server the retrieval of the source identified by the request URI; the retrieved resource is returned in the message body as an entity. </p>
+				<p class="list"> Can be combined with conditional and/or range request headers to effect conditional and/or partial resource retrieval. </p>
+				<p class="list"> Must be supported by all general-purpose servers </p>
 								<br>
         <h4> HEAD</h4>
-				<li> Identical to GET, except the message body is not included in the response. </li>
+				<p class="list"> Identical to GET, except the message body is not included in the response. </p>
 								<br>
         <h4> POST</h4>	
-				<li> Request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line. </li>
+				<p class="list"> Request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line. </p>
 								<br>
         <h4> OPTIONS </h4>
-				<li> Request for information about the communication options available on the request/response chain identified by the Request-URI. </li> 
-				<li> This method allows the client to determine the options and/or requirements associated with a resource, or the capabilities ofa server, without implying a resource action or initiating resource retrieval. </li>
+				<p class="list"> Request for information about the communication options available on the request/response chain identified by the Request-URI. </p> 
+				<p class="list"> This method allows the client to determine the options and/or requirements associated with a resource, or the capabilities ofa server, without implying a resource action or initiating resource retrieval. </p>
 								<br>
         <h4> TRACE </h4>
-				<li> Request the server to "echo" back to the client the received request. </li>
+				<p class="list"> Request the server to "echo" back to the client the received request. </p>
 								<br>
         <h4> PUT </h4>
-				<li> Request the server to store the enclosed entity in the message under the specified requesr URI. </li>
+				<p class="list"> Request the server to store the enclosed entity in the message under the specified requesr URI. </p>
 								<br>
         <h4> DELETE </h4>
-				<li> Request the server to delete the resource identified by the request URI. </li>
+				<p class="list"> Request the server to delete the resource identified by the request URI. </p>
 								<br>
         <h4> CONNECT </h4>
-				<li> Reserved for use of tunneling proxy server. </li>
+				<p class="list"> Reserved for use of tunneling proxy server. </p>
 								<br>
 								<br>
 
         <h3 class="major">Idempotent Methods</h3>
-				<li>The methods GET, HEAD, PUT and DELETE share this property.</li>
+				<p class="list">The methods GET, HEAD, PUT and DELETE share this property.</p>
 								<br>
-        
+								<div class="div1">
 								<h3 class="major">HTTP Message Headers</h3>
         
 								<h4>General Header Fields</h4>
+								<ul>	
 									<li>Cache-control</li>
 									<li>Connection</li>
 									<li>Date</li>
@@ -145,8 +149,10 @@
 									<li>Upgrade</li>
 									<li>Via</li>
 									<li>Warning</li>
+								</ul>
 								<br>
 								<h4>Request Header Fields</h4>
+								<ul>	
 									<li>Accept</li>
 									<li>Accept-charset</li>
 									<li>Accept-encoding</li>
@@ -165,8 +171,10 @@
 									<li>Range</li>
 									<li>Referrer</li>
 									<li>User-Agent</li>
+								</ul>
 								<br>
 								<h4>Response Header Fields</h4>
+								<ul>	
 									<li>Accept-Range</li>
 									<li>Age</li>
 									<li>E-Tag</li>
@@ -176,8 +184,10 @@
 									<li>Server</li>
 									<li>Vary</li>
 									<li>WWW-Authenticate</li>
+								</ul>
 								<br>
 								<h4>Entity Header Fields</h4>
+								<ul>
 									<li>Allow</li>
 									<li>Content-encoding</li>
 									<li>Content-language</li>
@@ -188,32 +198,41 @@
 									<li>Content-type</li>
 									<li>Expires</li>
 									<li>Last Modified</li>
-                                <br>
+                                </ul>
+								<br>
+								</div>
 								<h3 class="major">HTTP Status Codes</h3>
 								<h4>Informational (1xx) </h4>
+								<ul>
 									<li>100 Continue</li>
 									<li>101 Switching Protocols</li>
-                                <br>
+                                </ul>
+								<br>
                                 <h4> Success (2xx) </h4>
-								    <li>200 OK </li> 
+								<ul>
+									<li>200 OK </li> 
                                     <li>202 Accepted</li>  
                                     <li>203 Non-Authoritative Information </li>
                                     <li>204 No Content </li> 
                                     <li>204 No Content </li>
                                     <li>205 Reset Content </li> 
                                     <li>206 Partial Content </li> 
-                                <br>
+                                </ul>
+								<br>
                                  <h4> Redirection (3xx) </h4>
-                                    <li>300 Multiple Choices</li> 
+                                <ul>
+									<li>300 Multiple Choices</li> 
                                     <li>301 Moved Permanently</li>
                                     <li> 302 Found</li>
                                     <li>303 See Other</li> 
                                     <li>304 Not Modified </li>
                                     <li>305 Use Proxy </li>
                                     <li>307 Temporary Redirect</li> 
-                                <br>
+                                </ul>
+								<br>
                                 <h4>  Client Error (4xx) </h4>
-                                    <li>400 Bad Request </li>
+									<ul>	
+									<li>400 Bad Request </li>
                                     <li>401 Unauthorized </li>
                                     <li>402 Payment Required </li>
                                     <li>403 Forbidden </li>
@@ -232,16 +251,21 @@
                                     <li>416 Request Range Not Satisfiable</li> 
                                     <li>417 Expectation Failed </li>
                                     <li>  426 Upgrade Required</li>
-                                <br>
+                                </ul>
+								<br>
                                 <h4>Server Error (5xx) </h4>
+								<ul>
                                     <li>500 Internal Server Error </li>
                                     <li>501 Not Implemented </li>
                                     <li>502  Bad Gateway </li>
                                     <li>503 Service Unavailable</li> 
                                     <li>504 Gateway Timeout </li>
-                                    <li>505 HTTP Version Not Supported</li>  
+                                    <li>505 HTTP Version Not Supported</li>
+								</ul>
     </div>
-
-  </div>
+	</div>
+  <footer id="footer">
+						<p class="copyright">&copy; CABANTAC | CALIMLIM | MARCELO | OCAMPO | PAGADUAN</p>
+					</footer>
 </body>
 </html>

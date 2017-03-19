@@ -3,14 +3,14 @@ html
     height: 100%;
     width: 100%;
 }
-
 *
 { margin: 0;
   padding: 0;}
 
  body
 { font: normal 1.0em 'trebuchet ms', arial, sans-serif;
-  background:   url("../../images/bg.jpg") repeat;
+  background:url("../../images/bg.jpg") no-repeat center fixed;
+  background-size: cover;
   color: black; top: 0; left: 0;}
 
 
@@ -47,6 +47,12 @@ img
     height: 300px;
     width: 400px;
     }
+/* img.img1{ border: 0;
+    height: 300px;
+    width: 400px;
+	margin:auto;
+	padding:0 200px;
+    } */
 	
 a, a:hover
 { outline: none;
@@ -153,3 +159,24 @@ a:hover
   background-color: white;
     opacity: .73;
 } 
+#footer p{
+	margin:0 auto;
+	text-align:center;
+	color:white;
+	padding:20px 0;
+	font-size:15px;
+}
+div.div1{
+	float:right;
+	padding-right:90px;
+}
+li {
+
+    list-style-position: outside;
+	padding-left: 10px;
+}
+p.list {
+     list-style:disc outside none;
+     display:list-item; 
+	 padding-left: 10px;
+     }	
