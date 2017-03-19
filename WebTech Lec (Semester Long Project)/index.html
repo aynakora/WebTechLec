@@ -139,27 +139,34 @@
 									<li> Can be combined with conditional and/or range request headers to effect conditional and/or 
 										partial resource retrieval. </li>
 									<li> Must be supported by all general-purpose servers </li>
+								<br>
 								<h4> HEAD</h4>
 									<li> Identical to GET, except the message body is not included in the response. </li>
+								<br>
 								<h4> POST</h4>	
 									<li> Request that the origin server accept the entity enclosed in the request as a 
 										new subordinate of the resource identified by the Request-URI in the 
 										Request-Line. </li>
+								<br>
 								<h4> OPTIONS </h4>
 									<li> Request for information about the communication options available on 
 										the request/response chain identified by the Request-URI. </li> 
 									<li> This method allows the client to determine the options and/or requirements 
 										associated with a resource, or the capabilities ofa server, without implying 
 										a resource action or initiating resource retrieval. </li>
+								<br>
 								<h4> TRACE </h4>
 									<li> Request the server to “echo” back to the client the received request. </li>
+								<br>
 								<h4> PUT </h4>
 									<li> Request the server to store the enclosed entity in the message under the
 										specified requesr URI. </li>
+								<br>
 								<h4> DELETE </h4>
 									<li> Request the server to delete the resource identified by the request URI. </li>
 								<h4> CONNECT </h4>
 									<li> Reserved for use of tunneling proxy server. </li>
+								<br>
 								<br>
 								<h3 class="major">Idempotent Methods</h3>
 									<li>The methods GET, HEAD, PUT and DELETE share this property.</li>
