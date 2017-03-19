@@ -1,5 +1,8 @@
 html
-{ height: 100%;}
+{ 
+    height: 100%;
+    width: 100%;
+}
 
 *
 { margin: 0;
@@ -8,7 +11,7 @@ html
  body
 { font: normal .80em 'trebuchet ms', arial, sans-serif;
   background: #1b1f22;  url("../../images/bg.jpg") repeat;
-  color: #FFF;}
+  color: #FFF; top: 0; left: 0;}
 
 
   	p {
@@ -129,7 +132,9 @@ a:hover
 { padding: 22px 0 0 0;
   color: #FFF;
   letter-spacing: 0.1em;
-  text-decoration: none;}
+  text-decoration: none;
+    
+}
 
 #logo_text h1 a .logo_colour
 { color: black;}
