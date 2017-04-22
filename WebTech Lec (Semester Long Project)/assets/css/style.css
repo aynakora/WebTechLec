@@ -182,3 +182,13 @@ p.list3 {
 	display:list-item; 
 	padding-left: 100px;
 }
+p.list4 {
+    list-style:disc inside none;
+	display:list-item; 
+	padding-left: 150px;
+}
+p.list5 {
+    list-style:circle inside none;
+	display:list-item; 
+	padding-left: 200px;
+}
