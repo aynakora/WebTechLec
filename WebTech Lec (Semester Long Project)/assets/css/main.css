@@ -265,6 +265,7 @@
 	}
 
 
+
 /* Image */
 
 	.image {
@@ -279,7 +280,6 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
@@ -298,11 +298,11 @@
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
-				width: 100%;
+				width: 50%;
 			}
 
 		.image.left {
@@ -320,22 +320,38 @@
 		.image.fit {
 			display: block;
 			margin: 0 0 2rem 0;
-			width: 100%;
+			width: 50%;
 		}
 
 			.image.fit img {
-				width: 100%;
+				width: 50%;
 			}
 
 		.image.main {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%;
+			width: 50%;
 		}
 
 			.image.main img {
-				width: 100%;
+				width: 50%;
 			}
+
+		@media screen and (max-width: 736px) {
+
+			.image.main {
+				margin: 2rem 0;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.image.main {
+				margin: 1.5rem 0;
+			}
+
+		}
 
 		@media screen and (max-width: 736px) {
 
