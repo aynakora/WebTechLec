@@ -36,7 +36,7 @@
 								<p>EJB container</p>
 								<br>
 								<br>
-								<h4> Java EE Serve </h4>
+								<h4> Java EE Server </h4>
 								<h3 class="major">Java EE Web Application</h3>
 								<p> Collection of resources installed under a specific subset of the URL namespace of a web application server compliant with the Java EE Specification (e.g. Apache‟s Tomcat, Apache‟s Geronimo, Sun Microsystems‟ Glassfish, IBM‟s WebSphere, etc.)</p>
 								<h4>Resources:</h4>
@@ -61,6 +61,132 @@
 								<h4>JavaMail API</h4>
 								<h4>JavaBeans Activation Framework</h4>
 								<h4>Java API for XML Processing</h4>
+                                <br>
+								<br>
+                                <h3 class="major">Servlets</h3>
+                                <p>Java Object based on the Servlet API </p>
+                                <p>Runs in a server application to answer client requests; technically,  servlets are not tied to a specific client-server protocol, but they are most commonly used with HTTP and the term „servlet‟ is often used in the context of an “HTTP Servlet”</p>
+                                <p>Web-tier components in the Java EE architecture.</p>
+                                <p>Runs in, and is managed by, a web-tier container called the "Servlet Container‟</p>
+                                <p>Mapped to URLs to which clients send requests</p>
+                                <div class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">javax.servlet</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <p class="list">Servlet, GenericServlet</p>
+                                            <hr>
+                                            <p class="list">ServletRequest, ServletResponse</p>
+                                            <hr>
+                                            <p class="list">RequestDispatcher</p>
+                                        </div>
+                                    </div>
+                                <br>
+					            <br>
+                                <div class="dropdown">
+                                        <button onclick="myFunction1()" class="dropbtn">javax.servlet.http</button>
+                                        <div id="myDropdown1" class="dropdown-content">
+                                            <p class="list">HttpServlet</p>
+                                            <hr>
+                                            <p class="list">HttpServletRequest</p>
+                                            <hr>
+                                            <p class="list">HttpServletResponse</p>
+                                            <hr>
+                                            <p class="list">HttpSession</p>
+                                            <hr>
+                                            <p class="list">Cookie</p>
+                                        </div>
+                                </div>
+                		<br>
+				<br>
+                                <div class="dropdown">
+                                        <button onclick="myFunction2()" class="dropbtn">init(config)</button>
+                                        <div id="myDropdown2" class="dropdown-content">
+                                            <p class="list">Invoked once on the servlet by the servlet container when the servlet is instantiated; can be used by the servlet for one-time startup initialization</p>
+                                        </div>
+                                </div>
+                                <br>
+				<br>
+                                <div class="dropdown">
+                                        <button onclick="myFunction3()" class="dropbtn">service(request, response)</button>
+                                        <div id="myDropdown3" class="dropdown-content">
+                                            <p class="list">Invoked each time the servlet is called upon to process a request (typically on a separate thread f or each call)</p>
+                                            <hr>
+                                            <p class="list">In  HttpServlet, the default Service implementation maps the call to a specific doXXX() method (e.g.  doGet,  doPost) which is typically overridden to affect the servlet‟s functionality</p>
+                                        </div>
+                                </div>
+                                <br>
+				<br>
+                                <div class="dropdown">
+                                        <button onclick="myFunction4()" class="dropbtn">Destroy() </button>
+                                        <div id="myDropdown4" class="dropdown-content">
+                                            <p class="list">Invoked  on  the  servlet  by  the  servlet  container  when  the  servlet  is  to  be  unloaded  (e.g.  when  the  application  is  stopped  or undeployed); can be used by the servlet for clean-up processing (e.g. resource deallocation)</p>
+                                            
+                                        </div>
+                                </div>
+                                <br>
+				<br>
+                                 <div class="dropdown">
+                                        <button onclick="myFunction5()" class="dropbtn">Servlet Request Processing (HttpServletRequest)</button>
+                                        <div id="myDropdown5" class="dropdown-content">
+                                            <p class="list">Retrieving user-supplied request parameters</p>
+                                            <hr>
+                                            <p class="list">Retrieving request header values</p>
+                                            
+                                        </div>
+                                </div>
+                                <br>
+				<br>
+                                <div class="dropdown">
+                                        <button onclick="myFunction7()" class="dropbtn">Servlet Response Processing (HttpServletResponse)</button>
+                                        <div id="myDropdown7" class="dropdown-content">
+                                            <p class="list">Setting response status code</p>
+                                            <hr>
+                                            <p class="list">Setting response headers</p>
+                                            <hr>
+                                            <p class="list">Obtaining output object for sending the response</p>
+                                        
+                                        </div>
+                                </div>
+                                <br>
+				<br>
+                                <div class="dropdown">
+                                        <button onclick="myFunction8()" class="dropbtn">Servlet Request Dispatching (RequestDispatcher)</button>
+                                        <div id="myDropdown8" class="dropdown-content">
+                                            <p class="list">Obtain a RequestDispatcher to a resource (static or dynamic) from the request object</p>
+                                            <hr>
+                                            <p class="list">Include the dispatcher resource (or its output) in the current response; one or more resources can be included  (e.g. use for banners, footers, etc.)</p>
+                                            <hr>
+                                            <p class="list">Forwards  the  processing  of  the  current  request  to  the  dispatcher  resource;  the  servlet  processing  the  current  request  must  not generate a response ( e.g. use in MVC “controller” servlets) </p>
+                                               
+                                        
+                                        </div>
+                                </div>
+                                <br>
+					            <br>
+                                <div class="dropdown">
+                                        <button onclick="myFunction9()" class="dropbtn">Session Tracking(HttpSession)</button>
+                                        <div id="myDropdown9" class="dropdown-content">
+                                            <p class="list">Session tracking support is implemented either cookies or URL-rewriting</p>
+                                            <hr>
+                                            <p class="list">Obtaining session object from the current request
+                                            <pre>HttpSession session;
+                                                session = request.getSession(createNew);
+                                                     </pre></p>
+                                            <hr>
+                                            <p class="list">Obtaining session information (HttpSession)
+                                            <pre>getCreationTime(),  getLastAccessedTime(),  getMaxInactiveInternal(),  getId(),  isNew(), setMaxInactiveInterval(int val)</pre></p>
+                                            <hr>
+                                            <p class="list">destroying sessions
+                                            <pre>invalidate() </pre></p>
+                                            <hr>
+                                            <p class="list">URL-rewriting(HttpServletResponse) </p>
+                                               	
+                                        
+                                        </div>
+                                </div>
+                                <br>
+					            <br>
+                                
+                                
             </div>         
             	</div>
 			<footer id="footer">
