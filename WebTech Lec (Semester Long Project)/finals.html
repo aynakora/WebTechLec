@@ -12,7 +12,7 @@
 				<div id="logo">
 					<div id="logo_text">
 						<h1><a href="./index.html">WEBTEK<span class="logo_colour">finals</span></a></h1>
-						<h2>JavaEE.Servlets.JavaServerPages</h2>
+						<h2>JavaEE.Servlets.JavaServerPages.PHP.OWASP.NODE.JS</h2>
 					</div>
 				</div>
 				
@@ -23,26 +23,26 @@
 								<p><b>Java  EE </b> is  an  open,  standards-based  development  and  deployment  platform  for  creating distributed,  transactional,  reliable,  secure,  multi-tiered, web-based, server-centric, component-based enterprise applications</p>
 								<h3 class="major">Java EE Application Model</h3>
 								<h4>Java EE Clients</h4>
-								<p> Application Clients</p>
-								<p>Applets (embedded in web clients)</p>
+								<p>- Application Clients</p>
+								<p>- Applets (embedded in web clients)</p>
 								<h4>Web Components</h4>
-								<p>Servlets</p>
-								<p>JavaServer Pages (JSP)</p>
-								<p>JavaServer Faces (JSF)</p>
-								<p>Enterprise JavaBeans (EJBM)</p>
+								<p>- Servlets</p>
+								<p>- JavaServer Pages (JSP)</p>
+								<p>- JavaServer Faces (JSF)</p>
+								<p>- Enterprise JavaBeans (EJBM)</p>
 								<h4>Java EE Containers</h4>
-								<p>Client containers</p>
-								<p>Web container</p>
-								<p>EJB container</p>
+								<p>- Client containers</p>
+								<p>- Web container</p>
+								<p>- EJB container</p>
 								<br>
 								<br>
 								<h4> Java EE Server </h4>
 								<h3 class="major">Java EE Web Application</h3>
 								<p> Collection of resources installed under a specific subset of the URL namespace of a web application server compliant with the Java EE Specification (e.g. Apache‟s Tomcat, Apache‟s Geronimo, Sun Microsystems‟ Glassfish, IBM‟s WebSphere, etc.)</p>
 								<h4>Resources:</h4>
-								<p>Static resources: web pages, images, stylesheets, etc.(serves as is)</p>
-								<p>Dynamic resources: servlets, JSP</p>
-								<p>Miscellaneous resources: business object classes (e.g. Java Beans, EJB), support libraries, etc</p>
+								<p>- Static resources: web pages, images, stylesheets, etc.(serves as is)</p>
+								<p>- Dynamic resources: servlets, JSP</p>
+								<p>- Miscellaneous resources: business object classes (e.g. Java Beans, EJB), support libraries, etc</p>
 								<h4>XML-formatted descriptor and configuration files</h4>
 								<p>web.xml, application.xml, context.xml, etc.</p>
 								<h4>Organized into a standard hierarchical structure and typically packaged and deployed as WAR or EAR files</h4>
@@ -52,23 +52,26 @@
 								<h4>Enterprise JavaBeans Technology</h4>
 								<p>is the server-side component architecture for Java Platform, Enterprise Edition (Java EE). </p>
 								<p><b>EJB technology</b> enables rapid and simplified development of distributed, transactional, secure and portable applications based on Java technology.</p>
-								<h4>Java Servlet Technology</h4>
-								<h4>Java Server Pages</h4>
-								<h4>Java Server Pages Standard Tag Library</h4>
-								<h4>Java Server Faces</h4>
-								<h4>Java Msg Service API</h4>
-								<h4>Java Transaction API</h4>
-								<h4>JavaMail API</h4>
-								<h4>JavaBeans Activation Framework</h4>
-								<h4>Java API for XML Processing</h4>
+								<p>- Java Servlet Technology</p>
+								<p>- Java Server Pages</p>
+								<p>- Java Server Pages Standard Tag Library</p>
+								<p>- Java Server Faces</p>
+								<p>- Java Msg Service API</p>
+								<p>- Java Transaction API</p>
+								<p>- JavaMail API</p>
+								<p>- JavaBeans Activation Framework</p>
+								<p>- Java API for XML Processing</p>
                                 <br>
 								<br>
+                
+                <hr>
+                <br>
                                 <h3 class="major">Servlets</h3>
-                                <p>Java Object based on the Servlet API </p>
-                                <p>Runs in a server application to answer client requests; technically,  servlets are not tied to a specific client-server protocol, but they are most commonly used with HTTP and the term „servlet‟ is often used in the context of an “HTTP Servlet”</p>
-                                <p>Web-tier components in the Java EE architecture.</p>
-                                <p>Runs in, and is managed by, a web-tier container called the "Servlet Container‟</p>
-                                <p>Mapped to URLs to which clients send requests</p>
+                                <p>- Java Object based on the Servlet API </p>
+                                <p>- Runs in a server application to answer client requests; technically,  servlets are not tied to a specific client-server protocol, but they are most commonly used with HTTP and the term „servlet‟ is often used in the context of an “HTTP Servlet”</p>
+                                <p>- Web-tier components in the Java EE architecture.</p>
+                                <p>- Runs in, and is managed by, a web-tier container called the "Servlet Container‟</p>
+                                <p>- Mapped to URLs to which clients send requests</p>
                                 <div class="dropdown">
                                         <button onclick="myFunction()" class="dropbtn">javax.servlet</button>
                                         <div id="myDropdown" class="dropdown-content">
@@ -168,24 +171,21 @@
                                             <p class="list">Session tracking support is implemented either cookies or URL-rewriting</p>
                                             <hr>
                                             <p class="list">Obtaining session object from the current request
-                                            <pre>HttpSession session;
-                                                session = request.getSession(createNew);
-                                                     </pre></p>
+                                            - HttpSession session;
+                                            <br>session = request.getSession(createNew);
+                                            </p>
                                             <hr>
                                             <p class="list">Obtaining session information (HttpSession)
-                                            <pre>getCreationTime(),  getLastAccessedTime(),  getMaxInactiveInternal(),  getId(),  isNew(), setMaxInactiveInterval(int val)</pre></p>
+                                            - getCreationTime(),  getLastAccessedTime(),  getMaxInactiveInternal(),  getId(),  isNew(), setMaxInactiveInterval(int val)
+                                            </p>
                                             <hr>
                                             <p class="list">destroying sessions
-                                            <pre>invalidate() </pre></p>
+                                           - invalidate() </p>
                                             <hr>
                                             <p class="list">URL-rewriting(HttpServletResponse) </p>
-                                               	
-                                        
                                         </div>
                                 </div>
                                 <br>
-			        <br>
-	 			<br>
 			        <br>
 				<div class="dropdown">
                                         <button onclick="myFunction10()" class="dropbtn">JSP Standard Tag Library (JSTL)</button>
@@ -198,18 +198,17 @@
 					<pre><b>Internationalization Tag Library </b> - Locate setting, message bundling, number formatting, date formatting 
                                                      </pre>
 					pre><b>XML </b> - Core XML processing, flow control, transformation
-                                                     </pre>
+                                                    
 					<pre><b>JSTL Function </b> - String functions, collection lengths
-                                                     </pre></p>										 
+                                                     </pre>									 
                                             <hr>
   
                                         </div>
                                 </div>
                                 <br>
 				<br>
-				<br>
-				<br>
-				<br>
+                <hr>
+                <br>
 								<h2 class="major">PHP</h2>
 								<p> - Hypertext Preprocessor </p>
 								<p> - <b>PHP</b> is a server-side scripting language designed for web development. It is a general-purpose programming language. </p>
@@ -247,6 +246,9 @@
 								<br>
 								<br>
 								<br>
+                
+                <hr>
+                <br>
 								<h2 class="major">OWASP</h2>
 								<p> - <b>Open Web Application Security Project</b> is an open community dedicated to enabling organizations to develop, purchase, and maintain applications and APIs that can be trusted.</p>
                              					<h4>OWASP Top 10 Application Security Risks 2017</h4>
@@ -260,7 +262,9 @@
 								<p><b>A8 – Cross-Site Request Forgery (CSRF)</b> – A CSRF attack forces a logged-on victim’s browser to send a forged HTTP request, including the victim’s session cookie and any other automatically included authentication information, to a vulnerable web application. Such an attack allows the attacker to force a victim’s browser to generate requests the vulnerable application thinks are legitimate requests from the victim.</p>
 								<p><b>A9 – Using Components with Known Vulnerabilities</b> – Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.</p>
 								<p><b>A10 – Underprotected APIs</b> – Modern applications often involve rich client applications and APIs, such as JavaScript in the browser and mobile apps, that connect to an API of some kind (SOAP/XML, REST/JSON, RPC, GWT, etc.). These APIs are often unprotected and contain numerous vulnerabilities.</p>
-                                
+                <br>               
+                <hr>
+                <br>
                                 <h2 class="major">Node.js</h2>
                                 <p>Node.js is an open source, cross platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux. Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.</p>
                                 <p>Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
